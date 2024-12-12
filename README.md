@@ -6,7 +6,7 @@ git clone https://github.com/amelamedolli/Amel.git
 pip install aiohttp numpy tqdm pytest datasets torch transformers
 
 
-cd ../code_generation
+cd ../Amel
 
 
 mkdir tutorial
