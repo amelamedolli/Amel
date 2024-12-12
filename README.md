@@ -1,4 +1,4 @@
-# Follow the below and execute on by one.
+# Follow the below and execute one by one.
 ## Clone the repo
 git clone https://github.com/amelamedolli/Amel.git
 
@@ -12,7 +12,7 @@ cd ../code_generation
 mkdir tutorial
 
 
-## If you want to do 20 completion for each sample for all the samples,
+## If you want to do 20 completion for each sample for all the coding problems
 python3 automodel.py --name "facebook/incoder-6B" --root-dataset humaneval --lang java --temperature 0.2 --batch-size 20 --completion-limit 20 --output-dir-prefix tutorial
 
 cd ../evaluation/src
@@ -26,6 +26,6 @@ cd ../
 
 cd ../
 
-## Get the score
+## Get the functional correctness score
 python3 pass_k.py ./tutorial/*
 
